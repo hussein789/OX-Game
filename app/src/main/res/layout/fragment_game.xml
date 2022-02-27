@@ -10,6 +10,73 @@
     tools:context=".ui.GameFragment"
     android:padding="16dp">
 
+    <LinearLayout
+        android:id="@+id/player_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout1"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/item_margin"
+            >
+
+            <TextView
+                android:id="@+id/player1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Hussein"
+                android:textSize="@dimen/large_text_size"
+                android:textColor="@color/purple_700"
+                />
+            <TextView
+                android:id="@+id/player1_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text_size"
+                android:textColor="@color/black"
+                tools:text="5"
+                android:layout_marginStart="@dimen/item_margin"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/player2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Dida"
+                android:textSize="@dimen/large_text_size"
+                android:textColor="@android:color/holo_red_dark"
+                />
+            <TextView
+                android:id="@+id/player2_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text_size"
+                android:textColor="@color/black"
+                tools:text="5"
+                android:layout_marginStart="@dimen/item_margin"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -18,7 +85,7 @@
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_info_container"
         app:layout_constraintBottom_toTopOf="@id/divider1"
         android:orientation="horizontal"
         >

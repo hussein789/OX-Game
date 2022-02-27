@@ -18,7 +18,7 @@ class SplashFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         binding = FragmentSplashBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -48,7 +48,7 @@ class SplashFragment : Fragment() {
     }
 
     private fun navigateToGameScreen() {
-        this.findNavController().navigate(R.id.action_splashFragment_to_gameFragment)
+        this.findNavController().navigate(R.id.action_splashFragment_to_playerFragment)
     }
 
 }
