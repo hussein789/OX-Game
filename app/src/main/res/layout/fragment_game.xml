@@ -38,7 +38,7 @@
                 android:textColor="@color/purple_700"
                 />
             <TextView
-                android:id="@+id/player1_count"
+                android:id="@+id/player1_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/large_text_size"
@@ -65,7 +65,7 @@
                 android:textColor="@android:color/holo_red_dark"
                 />
             <TextView
-                android:id="@+id/player2_count"
+                android:id="@+id/player2_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/large_text_size"

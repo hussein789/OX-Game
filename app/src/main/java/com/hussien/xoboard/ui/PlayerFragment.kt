@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -16,14 +18,13 @@ class PlayerFragment : Fragment() {
 
     lateinit var binding:FragmentPlayerBinding
 
-    lateinit var viewModel: SharedViewModel
+     val viewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentPlayerBinding.inflate(inflater,container,false)
-        viewModel = ViewModelProvider(this).get(SharedViewModel::class.java)
         return binding.root
     }
 

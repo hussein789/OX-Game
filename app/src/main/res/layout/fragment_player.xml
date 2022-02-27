@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.PlayerFragment"
     android:gravity="center"
-    android:padding="@dimen/screen_padding"
-    >
+    android:padding="@dimen/screen_padding">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/player1_tv"
@@ -19,6 +19,7 @@
             android:id="@+id/player1_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="4"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -27,14 +28,16 @@
         android:id="@+id/player2_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/player_1"
+        android:hint="@string/player_2"
         android:layout_marginTop="@dimen/item_margin"
+
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/player2_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="4"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
